@@ -22,31 +22,6 @@ Designed to work **offline-first** with **Ollama (phi4)** or any OpenAI-compatib
 
 ---
 
-## 🧱 Suggested Project Structure
-
-```
-.
-├─ src/
-│  ├─ core/                 # config, llm loader (Ollama/OpenAI-compatible), caching
-│  ├─ agents/               # CityDataAgent, LogisticsAgent, ItineraryAgent, PolicyAgent, CommsAgent
-│  ├─ tools/                # scraping, parsers, calendars, geo helpers
-│  ├─ rag/                  # embedding, chunking, vector store (Chroma)
-│  ├─ api/                  # FastAPI endpoints
-│  ├─ pipelines/            # multi-agent orchestrations (CrewAI or LangGraph)
-│  └─ schemas/              # pydantic models for requests/responses between agents
-├─ notebooks/               # experiments, demos (e.g., Ollama phi4)
-├─ data/
-│  ├─ knowledge_base/       # local docs for RAG (PDF/CSV/TXT)
-│  └─ samples/              # sample inputs/outputs (anonymized)
-├─ tests/
-├─ .env.example
-└─ README.md
-```
-
-> You can start with a subset (e.g., `src/core`, `src/agents`, `src/api`) and grow over time.
-
----
-
 ## 🚀 Quickstart
 
 ### 1) Python & system prerequisites
