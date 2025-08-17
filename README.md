@@ -115,44 +115,6 @@ Each endpoint responds with:
 
 ---
 
-## 📚 RAG (Local Knowledge)
-
-1) Put documents in `data/knowledge_base/` (PDF/CSV/TXT).  
-2) Run the indexer (example CLI):
-```bash
-python -m src.rag.index --input data/knowledge_base --persist .chroma
-```
-3) PolicyAgent will use the vector store for semantic retrieval before answering.
-
----
-
-## 🧪 Testing
-
-- Unit tests in `tests/` (pytest).
-- Contract tests validate the **schemas** (pydantic) exchanged between agents.
-- Add sample inputs/outputs in `data/samples/` to lock baseline behavior.
-
----
-
-## 🗺️ Roadmap
-
-- [ ] Deterministic **LangGraph** orchestration option (besides CrewAI)
-- [ ] Calendar-aware suggestions (opening hours, travel time buffers)
-- [ ] Simple MILP heuristic for activity scheduling (hard constraints)
-- [ ] Structured **critique/self-check** step for each agent
-- [ ] Evaluation harness with human preference annotations
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please:
-1. Open an issue to discuss major changes.
-2. Follow the code style used in `src/`.
-3. Add tests when relevant.
-
----
-
 ## 📝 License
 
 Choose a license that matches your goals. **MIT** is a good default for open projects.  
