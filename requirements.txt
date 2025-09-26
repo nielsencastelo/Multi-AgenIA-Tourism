@@ -5,3 +5,5 @@ pydantic==2.8.2
 python-dotenv==1.0.1
 langchain_ollama
 langchain_tavily
+markdown2
+weasyprint
